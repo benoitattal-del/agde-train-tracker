@@ -3,7 +3,10 @@ import requests
 import datetime
 
 # Configuration
-API_KEY = '8583d7dc-7548-4a8d-8097-84ebdf95eae0'
+import streamlit as st
+
+# La clé est récupérée automatiquement depuis les secrets du cloud
+API_KEY = st.secrets["API_KEY"]
 STOP_ID = 'stop_area:SNCF:87781278' 
 TEMPS_TRAJET_VERS_POINT = 3 
 
